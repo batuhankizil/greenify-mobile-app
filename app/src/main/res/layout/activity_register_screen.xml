@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/background_top"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/madani"
+            android:textSize="38sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#4F6F52"
+            android:text="@string/app_name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#436850"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:text="@string/slogan"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="İsim"/>
+
+        <EditText
+            android:id="@+id/userSurname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Soyisim"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:hint="Telefon Numarası"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:hint="Şifre"/>
+
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:hint="Şifre Tekrar"/>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:text="Kayıt Ol"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hesabınız var mı?"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:text="Giriş Yap"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

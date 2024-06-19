@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecyclePreview">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#436850"
+        android:elevation="4dp"
+        app:title="Geri Dönüşüm Önizleme"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:text="Geri Dönüşümünüz Bildirilmeye Hazır"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#9A9A9A"
+        android:text="Geri Dönüşümünüz Bildirilmeye Hazır"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:text="Geri Dönüşüm Türü"/>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/custom_button_app">
+
+        <TextView
+            android:id="@+id/materialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Yağ"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:text="Geri Dönüşüm Ağırlığı"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:layout_margin="20dp"
+        android:padding="12dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:text="Geri Dönüşüm Adresi"/>
+
+
+    <EditText
+        android:id="@+id/currentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edittext"
+        android:layout_margin="20dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/baseline_location_on_24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/apartmentNumber"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginHorizontal="20dp"
+            android:padding="12dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Bina numarası"/>
+
+        <EditText
+            android:id="@+id/floorNumber"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginHorizontal="20dp"
+            android:padding="12dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Kat numarası"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginHorizontal="20dp"
+            android:padding="12dp"
+            android:inputType="number"
+            android:hint="Bina numarası"/>
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginHorizontal="20dp"
+            android:padding="12dp"
+            android:inputType="number"
+            android:hint="Kat numarası"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_margin="20dp"
+        android:gravity="start"
+        android:padding="12dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Notunuz"/>
+
+
+    <Button
+        android:id="@+id/completeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_app"
+        android:text="Bildir"/>
+
+</LinearLayout>

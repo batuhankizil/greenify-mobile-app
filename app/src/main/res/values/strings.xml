@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Greenify</string>
+    <string name="slogan">Sürdürülebilir dünyaya katkıda bulun</string>
+    <string name="slogan_competent">Sürdürülebilir dünyaya katkıda bulunduğunuz için teşekkürler</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="carbon">0 kg \n CO2</string>
+
+    <string name="MAPS_API_KEY">AIzaSyAAlXhTjruNmJWaR9M-wXhOB2JKbI0gR-8</string>
+</resources>

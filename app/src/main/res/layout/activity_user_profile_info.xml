@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileInfo"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#436850"
+        android:elevation="4dp"
+        app:title="Profil Bilgileri"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:src="@drawable/user_profile"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoşgeldin, "
+                    android:textColor="@color/text"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/userFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="19sp"
+                android:text="Batuhan"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="batu@gmail.com"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İsim"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Batu"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapSentences"
+            android:background="@drawable/custom_edittext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soyisim"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/userSurname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Kızıl"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapSentences"
+            android:background="@drawable/custom_edittext"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cep Telefonu"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="5xx xxx xx xx"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Kaydet"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button_app"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

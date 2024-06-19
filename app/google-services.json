@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522581821304",
+    "project_id": "greenify-27f57",
+    "storage_bucket": "greenify-27f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522581821304:android:f2e254046e169af716aa8d",
+        "android_client_info": {
+          "package_name": "com.example.greenify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjfK2B7b4G0wQllIWiEonhkXQsIUNn0Tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

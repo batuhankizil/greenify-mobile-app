@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecycleContinueActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#436850"
+        android:elevation="4dp"
+        app:title="Konum"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:text="Geri Dönüşümlerinizin Konumunu Ekleyin"/>
+
+            <EditText
+                android:id="@+id/currentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginHorizontal="20dp"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/baseline_location_on_24"/>
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginHorizontal="20dp"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/baseline_location_on_24"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/apartmentNumber"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginHorizontal="20dp"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:hint="Bina numarası"/>
+
+                <EditText
+                    android:id="@+id/floorNumber"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginHorizontal="20dp"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:hint="Kat numarası"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/latitude"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginHorizontal="20dp"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:hint="Bina numarası"/>
+
+                <EditText
+                    android:id="@+id/longitude"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginHorizontal="20dp"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:hint="Kat numarası"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_margin="20dp"
+                android:gravity="start"
+                android:padding="12dp"
+                android:hint="Notunuz var mı?"/>
+
+            <Button
+                android:id="@+id/continueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button_app"
+                android:text="Devam et"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
